@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+  <script src="https://kit.fontawesome.com/30b073d305.js" crossorigin="anonymous"></script>
+    <title>Book Your Stay!</title>
+</head>
+<body>
+
+    
+  <section id="header">
+    
+    <a href="#"><img src="./images/logo.jpg" alt="" class ="logo"></a>
+    
+    <div class="d">
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="services.html">Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="wish.html">Wishlist</a></li>
+        <!-- <li><a href="cart.html">Cart</a></li> -->
+        <li><a href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+        <li><a  href="#" class="nav__link">Account</li>
+        <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+        <li class="nav__list-item">
+            <a href="#" class="nav__link n1" id="google_translate_element"></a>
+         </li>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>         
+  </section>
+
+  <script type="text/JavaScript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit(){
+      new google.translate.TranslateElement({
+        defaultLanguage: 'en',
+        pageLanguage: 'en',
+        includedLanguages: 'kn,en,hi,ml',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false,
+        multilanguagePage: true
+      }, 'google_translate_element')
+    
+    };
+  </script>
+  
+  
+  <!-- <div class="main"></div> -->
+  
+
+
+<form name="form-1" action="#" method="GET">
+    <div class="containerHTML">
+      <h1 class="heading" style="color: white;">
+          BOOK &nbsp;YOUR &nbsp;STAY!
+      </h1>
+        <div class="searchbox">
+            <input required type="search" id="search-input" placeholder="Search City" />
+            <!--
+            <div id="searchButton" class="fa fa-search" 
+            onClick="javascript: document.forms.form.submit();" ></div>
+             <div id="xButton" class="fa fa-times"></div> 
+            -->
+        </div>
+        <!--
+         <div class="date_area">
+            <label id="label1" for="from_date">From <input class="datepick" placeholder="To" id="from_date" required type="date" /></label>
+            <label id="label2" for="to_date">To&ensp;&ensp;&ensp;&nbsp;<input class="datepick" placeholder="From" id="to_date" required type="date"/></label>    
+        </div>
+        -->
+    <div class="submit_button_div"><button class="submit_button" id="search" type="submit">Search</button></div>
+    </div>
+</form>
+<br>
+<h1 class="result-heading">R&ensp;E&ensp;S&ensp;U&ensp;L&ensp;T&ensp;S</h1>
+<br>
+<div id="buttons" style="text-align: center;margin-bottom: 2rem;">
+  <button class="button-value" id="all" onclick="filterProduct('all')">All</button>
+  <button class="button-value" id="hotel" onclick="filterProduct('hotel')">Hotel</button>
+  <button class="button-value" id="dorm" onclick="filterProduct('dorm')">Dorm</button>
+  <button class="button-value" id="guesthouse" onclick="filterProduct('guesthouse')">Guesthouse</button>
+</div>
+<div id="products">
+  <script src="script.js"></script>
+</div>
+    
+    
+</body>
+
+<footer class="section-p1">
+  <div class="col">
+    <img src="./images/logo.jpg" alt="" class="logo">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> IIIC - Christ University kengeri campus</p>
+    <p><strong>Hours</strong> 9:00 am - 4:00 pm</p>
+    <h4>Follow us</h4>
+    <div class="follow">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </div>
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Delivery information</a>
+    <a href="#">Privacy policy</a>
+    <a href="#">Terms & conditions</a>
+    <a href="#">Contact us</a>
+  </div>
+  <div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign - in</a>
+    <a href="#">View Cart</a>
+    <a href="#">My wishlist</a>
+    <a href="#">Track my orders</a>
+    <a href="#">Help</a>
+  </div>
+  <div class="col install">
+    <h4>Install App</h4>
+    <p>From app Store or play store
+    </p>
+    <div class="foot-row">
+      <img src="./images/app.jpg" alt="">
+      <img src="./images/play.jpg" alt="">
+    </div>
+    <p>Securted payment Gateways</p>
+    <img src="./images/pay.png" alt="">
+
+  </div>
+  <div class="copyright">
+    <p>Developed & Maintained by IIIC - Christ University, Kengeri</p>
+  </div>
+</footer>
+
+
+</html>
